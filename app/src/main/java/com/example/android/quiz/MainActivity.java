@@ -20,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /*
-        This function reset points to 0.
-        Check all questions
+     *  This function reset points to 0.
+     *  Check all questions
      */
     public void submitQuiz(View view){
         points = 0;

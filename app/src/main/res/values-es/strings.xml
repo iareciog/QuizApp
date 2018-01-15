@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Questionario</string>
+    <string name="insert_name">Introducir Nombre</string>
+    <string name="question_1">Pregunta 1</string>
+    <string name="question_1_ask">¿Que tipo de variable puede almacenar \"177\"?</string>
+    <string name="question_2">Pregunta 2</string>
+    <string name="question_2_ask">¿Cual es la forma correcta de unir dos strings?</string>
+    <string name="question_3">Pregunta 3</string>
+    <string name="question_4">Pregunta 4</string>
+    <string name="question_3_ask">¿Como declarar una variable con las palabras \"Car Color\"?</string>
+    <string name="question_4_ask">El numero 38, ¿Que tipo de variable es?</string>
+    <string name="question_5">Pregunta 5</string>
+    <string name="question_5_ask">¿Cual de estas posibles respuestas es considerada String?</string>
+    <string name="q5_answer_1">Libro</string>
+    <string name="submit_button">Enviar</string>
+    <string name="editText_answer">Introducir una respuesta</string>
+</resources>

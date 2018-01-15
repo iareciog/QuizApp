@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Quiz</string>
+
+    <!-- Insert Name EditText -->
+    <string name="insert_name">Insert Name</string>
+
+    <!-- Question 1 with the respectively answers -->
+    <string name="question_1">Question 1</string>
+    <string name="question_1_ask">What kind of variable can store \"177\" ?</string>
+    <string name="q1_answer_1" translatable="false">boolean</string>
+    <string name="q1_answer_2" translatable="false">int</string>
+    <string name="q1_answer_3" translatable="false">String</string>
+    <string name="q1_answer_4" translatable="false">string</string>
+
+    <!-- Question 2 with the respectively answers -->
+    <string name="question_2">Question 2</string>
+    <string name="question_2_ask">What is the correct way to join two strings?</string>
+    <string name="q2_answer_1" translatable="false">\"My name is \" + name</string>
+    <string name="q2_answer_2" translatable="false">\"My name is\" name</string>
+    <string name="q2_answer_3" translatable="false">My name is + name</string>
+    <string name="q2_answer_4" translatable="false">\"My name is name\"</string>
+
+    <!-- Question 3 with the respectively answers -->
+    <string name="question_3">Question 3</string>
+    <string name="question_3_ask">How declare a string variable with the words \"Car color\"?</string>
+
+
+    <!-- Question 4 with the respectively answers -->
+    <string name="question_4">Question 4</string>
+    <string name="question_4_ask">The number 38, What kind of variable is?</string>
+
+    <!-- Question 5 with the respectively answers -->
+    <string name="question_5">Question 5</string>
+    <string name="question_5_ask">Which of these possible answers is considered a string?</string>
+    <string name="q5_answer_1">Book</string>
+    <string name="q5_answer_2" translatable="false">27</string>
+    <string name="q5_answer_3" translatable="false">\"71\"</string>
+    <string name="q5_answer_4" translatable="false">\"7\"</string>
+
+    <!-- Submit -->
+    <string name="submit_button">Submit</string>
+
+    <!-- Common -->
+    <string name="editText_answer">Enter an answer</string>
+
+</resources>

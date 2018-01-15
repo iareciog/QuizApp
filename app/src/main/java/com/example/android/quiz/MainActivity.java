@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
      *  Check all questions
      */
     public void submitQuiz(View view){
-        points = 0;
+        points = 1;
         question1Check();
         question2Check();
         question3Check();

@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    int points;
+    private int points;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     /*
      *  This function reset points to 0.
      *  Check all questions
+     *  and give the result.
      */
     public void submitQuiz(View view){
         points = 0;
@@ -31,15 +32,19 @@ public class MainActivity extends AppCompatActivity {
         question4Check();
         question5Check();
         calculatePoints();
-        String result = resultText();
-        TextView theResult = findViewById(R.id.result);
-        theResult.setText(result);
+        displayResult();
     }
 
+
+    private void displayResult(){
+        String result = resultText();
+        TextView theResult = findViewById(R.id.quiz_result);
+        theResult.setText(result);
+    }
     /**
      *  This function create a return of a string
      *
-     *  @return a string
+     *  @return a String
      **/
     private String resultText(){
         String message;

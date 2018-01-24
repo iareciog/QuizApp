@@ -19,11 +19,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    /*
+    /**
      *  This function reset points to 0.
      *  Check all questions
      *  and give the result.
-     */
+     **/
     public void submitQuiz(View view){
         points = 0;
         question1Check();
@@ -81,8 +81,9 @@ public class MainActivity extends AppCompatActivity {
         }
         return result;
     }
-
-    //Check if answer from question 1 are correct
+    /**
+     * Check if answer from question 1 are correct
+     **/
     private void question1Check(){
         RadioButton correctAnswer = findViewById(R.id.q1_answer_3);
         boolean answer_q1 = correctAnswer.isChecked();
@@ -121,11 +122,11 @@ public class MainActivity extends AppCompatActivity {
             points = points + 2;
         }
     }
-    /*
+    /**
      *  Check if answers from question 5 are correct
      *
      *  If there any answer wrong, discount 2 points to the total points of the question
-     */
+     **/
     private void question5Check(){
         CheckBox correctAnswer1 = findViewById(R.id.q5_answer_1);
         CheckBox correctAnswer2 = findViewById(R.id.q5_answer_3);

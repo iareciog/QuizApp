@@ -11,4 +11,87 @@
         <item name="colorControlHighlight">@color/colorBar</item>
     </style>
 
+    <!-- First EditText, Name Style -->
+
+    <style name="FirstEditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/marginSides</item>
+        <item name="android:layout_marginRight">@dimen/marginSides</item>
+        <item name="android:layout_marginTop">@dimen/marginUpDown</item>
+        <item name="android:layout_marginBottom">@dimen/marginUpDown</item>
+    </style>
+
+    <!-- The Rest of EditText on the App -->
+
+    <style name="EditTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/answerTextSize</item>
+        <item name="android:layout_marginLeft">@dimen/marginSides</item>
+        <item name="android:layout_marginRight">@dimen/marginSides</item>
+        <item name="android:layout_marginTop">@dimen/marginUpDown</item>
+        <item name="android:layout_marginBottom">@dimen/marginUpDown</item>
+    </style>
+
+    <!-- The first Question Title Style -->
+
+    <style name="FirstQuestionTitleStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/questionTitleTextSize</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_marginLeft">@dimen/marginSides</item>
+        <item name="android:layout_marginRight">@dimen/marginSides</item>
+        <item name="android:layout_marginTop">@dimen/marginUpDown</item>
+        <item name="android:layout_marginBottom">@dimen/marginUpDown</item>
+    </style>
+
+    <!-- The rest of the Question Titles on the App -->
+
+    <style name="QuestionTitleStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/questionTitleTextSize</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_marginLeft">@dimen/marginSides</item>
+        <item name="android:layout_marginRight">@dimen/marginSides</item>
+        <item name="android:layout_marginTop">@dimen/marginUpQuestionTitleAndFinalButton</item>
+        <item name="android:layout_marginBottom">@dimen/marginUpDown</item>
+    </style>
+
+    <!-- Question Style -->
+
+    <style name="QuestionStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/marginSides</item>
+        <item name="android:layout_marginRight">@dimen/marginSides</item>
+        <item name="android:layout_marginTop">@dimen/questionMargin</item>
+        <item name="android:layout_marginBottom">@dimen/marginUpDown</item>
+    </style>
+
+    <!-- Style for RadioGroup and other Layouts inside the App -->
+
+    <style name="RadioGroupAndLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/marginSides</item>
+        <item name="android:layout_marginRight">@dimen/marginSides</item>
+        <item name="android:layout_marginTop">@dimen/questionMargin</item>
+        <item name="android:layout_marginBottom">@dimen/marginUpDown</item>
+    </style>
+
+    <!-- Style for the Answers on the App -->
+
+    <style name="AnswerStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/answerTextSize</item>
+        <item name="android:layout_marginTop">@dimen/questionMargin</item>
+        <item name="android:layout_marginBottom">@dimen/marginUpDown</item>
+    </style>
+
 </resources>

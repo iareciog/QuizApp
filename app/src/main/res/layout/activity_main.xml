@@ -16,301 +16,160 @@
 
         <EditText
             android:id="@+id/name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/FirstEditTextStyle"
             android:hint="@string/insert_name"
-            android:textAlignment="center"
-            android:layout_marginLeft="@dimen/margin_8dp"
-            android:layout_marginRight="@dimen/margin_8dp"
-            android:layout_marginTop="@dimen/margin_4dp"
-            android:layout_marginBottom="@dimen/margin_4dp"/>
+            android:textAlignment="center" />
 
         <!-- Question 1 -->
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/FirstQuestionTitleStyle"
             android:text="@string/question_1"
-            android:textAllCaps="true"
-            android:textSize="@dimen/questionTextSize"
-            android:fontFamily="arial"
-            android:textColor="@android:color/black"
-            android:layout_marginLeft="@dimen/margin_8dp"
-            android:layout_marginRight="@dimen/margin_8dp"
-            android:layout_marginTop="@dimen/margin_4dp"
-            android:layout_marginBottom="@dimen/margin_4dp"/>
+            android:fontFamily="arial" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text='@string/question_1_ask'
-            android:layout_marginLeft="@dimen/margin_8dp"
-            android:layout_marginRight="@dimen/margin_8dp"
-            android:layout_marginTop="@dimen/margin_2dp"
-            android:layout_marginBottom="@dimen/margin_2dp"/>
+            style="@style/QuestionStyle"
+            android:text='@string/question_1_ask' />
 
         <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginLeft="@dimen/margin_8dp"
-            android:layout_marginRight="@dimen/margin_8dp"
-            android:layout_marginTop="@dimen/margin_2dp"
-            android:padding="@dimen/margin_4dp">
+            style="@style/RadioGroupAndLayoutStyle"
+            android:orientation="horizontal">
 
             <!-- Question 1 - Answer 1 -->
             <RadioButton
                 android:id="@+id/q1_answer_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/q1_answer_1"
-                android:textSize="@dimen/answerTextSize"
-                android:layout_marginRight="@dimen/margin_8dp"/>
+                style="@style/AnswerStyle"
+                android:text="@string/q1_answer_1" />
 
             <!-- Question 1 - Answer 2 -->
             <RadioButton
                 android:id="@+id/q1_answer_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/q1_answer_2"
-                android:textSize="@dimen/answerTextSize"
-                android:layout_marginRight="@dimen/margin_8dp"
-                />
+                style="@style/AnswerStyle"
+                android:text="@string/q1_answer_2" />
 
             <!-- Question 1 - Answer 3 -->
             <RadioButton
                 android:id="@+id/q1_answer_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/q1_answer_3"
-                android:textSize="@dimen/answerTextSize"
-                android:layout_marginRight="@dimen/margin_8dp" />
+                style="@style/AnswerStyle"
+                android:text="@string/q1_answer_3" />
 
             <!-- Question 1 - Answer 4 -->
             <RadioButton
                 android:id="@+id/q1_answer_4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/q1_answer_4"
-                android:textSize="@dimen/answerTextSize" />
+                style="@style/AnswerStyle"
+                android:text="@string/q1_answer_4" />
 
         </RadioGroup>
 
         <!-- Question 2 -->
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/QuestionTitleStyle"
             android:text="@string/question_2"
-            android:textAllCaps="true"
-            android:textSize="@dimen/questionTextSize"
-            android:fontFamily="arial"
-            android:textColor="@android:color/black"
-            android:layout_marginLeft="@dimen/margin_8dp"
-            android:layout_marginRight="@dimen/margin_8dp"
-            android:layout_marginTop="@dimen/margin_10dp"
-            android:layout_marginBottom="@dimen/margin_4dp" />
+            android:fontFamily="arial" />
 
-        <!-- Question 2 - Ask -->
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/question_2_ask"
-            android:layout_marginLeft="@dimen/margin_8dp"
-            android:layout_marginRight="@dimen/margin_8dp"
-            android:layout_marginTop="@dimen/margin_2dp"
-            android:layout_marginBottom="@dimen/margin_4dp"/>
+            style="@style/QuestionStyle"
+            android:text="@string/question_2_ask" />
 
 
         <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginLeft="@dimen/margin_8dp"
-            android:layout_marginRight="@dimen/margin_8dp"
-            android:layout_marginTop="@dimen/margin_2dp"
-            android:layout_marginBottom="@dimen/margin_4dp">
+            style="@style/RadioGroupAndLayoutStyle"
+            android:orientation="vertical">
 
             <!-- Question 2 - Answer 1 -->
             <RadioButton
                 android:id="@+id/q2_answer_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/q2_answer_1"
-                android:textSize="@dimen/answerTextSize"
-                android:layout_marginTop="@dimen/margin_2dp"
-                android:paddingBottom="@dimen/margin_4dp"/>
+                style="@style/AnswerStyle"
+                android:text="@string/q2_answer_1" />
 
             <!-- Question 2 - Answer 2 -->
             <RadioButton
                 android:id="@+id/q2_answer_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/q2_answer_2"
-                android:textSize="@dimen/answerTextSize"
-                android:layout_marginTop="@dimen/margin_2dp"
-                android:paddingBottom="@dimen/margin_4dp"/>
+                style="@style/AnswerStyle"
+                android:text="@string/q2_answer_2" />
 
             <!-- Question 2 - Answer 3 -->
             <RadioButton
                 android:id="@+id/q2_answer_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/q2_answer_3"
-                android:textSize="@dimen/answerTextSize"
-                android:layout_marginTop="@dimen/margin_2dp"
-                android:paddingBottom="@dimen/margin_4dp"/>
+                style="@style/AnswerStyle"
+                android:text="@string/q2_answer_3" />
 
             <!-- Question 2 - Answer 4 -->
             <RadioButton
                 android:id="@+id/q2_answer_4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/q2_answer_4"
-                android:textSize="@dimen/answerTextSize"
-                android:layout_marginTop="@dimen/margin_2dp"
-                android:paddingBottom="@dimen/margin_4dp"/>
-
+                style="@style/AnswerStyle"
+                android:text="@string/q2_answer_4" />
         </RadioGroup>
         <!-- Question 3 -->
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/QuestionTitleStyle"
             android:text="@string/question_3"
-            android:textAllCaps="true"
-            android:textSize="@dimen/questionTextSize"
-            android:fontFamily="arial"
-            android:textColor="@android:color/black"
-            android:layout_marginLeft="@dimen/margin_8dp"
-            android:layout_marginRight="@dimen/margin_8dp"
-            android:layout_marginTop="@dimen/margin_10dp"
-            android:layout_marginBottom="@dimen/margin_4dp"/>
-        <!-- Question 3 - Ask -->
+            android:fontFamily="arial" />
+
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/question_3_ask"
-            android:layout_marginLeft="@dimen/margin_8dp"
-            android:layout_marginRight="@dimen/margin_8dp"
-            android:layout_marginTop="@dimen/margin_2dp"
-            android:layout_marginBottom="@dimen/margin_4dp" />
+            style="@style/QuestionStyle"
+            android:text="@string/question_3_ask" />
 
         <!-- Question 3 - Answer -->
         <EditText
             android:id="@+id/q3_answer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/editText_answer"
-            android:textSize="@dimen/answerTextSize"
-            android:layout_marginLeft="@dimen/margin_4dp"
-            android:layout_marginRight="@dimen/margin_4dp"/>
+            style="@style/EditTextStyle"
+            android:hint="@string/editText_answer" />
 
         <!-- Question 4 -->
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/QuestionTitleStyle"
             android:text="@string/question_4"
-            android:textAllCaps="true"
-            android:textSize="@dimen/questionTextSize"
-            android:fontFamily="arial"
-            android:textColor="@android:color/black"
-            android:layout_marginLeft="@dimen/margin_8dp"
-            android:layout_marginRight="@dimen/margin_8dp"
-            android:layout_marginTop="@dimen/margin_10dp"
-            android:layout_marginBottom="@dimen/margin_4dp"/>
+            android:fontFamily="arial" />
 
-        <!-- Question 4 - Ask -->
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="@string/question_4_ask"
-            android:layout_marginLeft="@dimen/margin_8dp"
-            android:layout_marginRight="@dimen/margin_8dp"
-            android:layout_marginTop="@dimen/margin_2dp"
-            android:layout_marginBottom="@dimen/margin_4dp" />
+            style="@style/QuestionStyle"
+            android:hint="@string/question_4_ask" />
 
         <!-- Question 4 - Answer -->
         <EditText
             android:id="@+id/q4_answer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/editText_answer"
-            android:textSize="@dimen/answerTextSize"
-            android:layout_marginLeft="@dimen/margin_4dp"
-            android:layout_marginRight="@dimen/margin_4dp"/>
+            style="@style/EditTextStyle"
+            android:hint="@string/editText_answer" />
 
         <!-- Question 5 -->
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/QuestionTitleStyle"
             android:text="@string/question_5"
-            android:textAllCaps="true"
-            android:textSize="15sp"
-            android:fontFamily="arial"
-            android:textColor="@android:color/black"
-            android:layout_marginLeft="@dimen/margin_8dp"
-            android:layout_marginRight="@dimen/margin_8dp"
-            android:layout_marginTop="@dimen/margin_10dp"
-            android:layout_marginBottom="@dimen/margin_4dp"/>
+            android:fontFamily="arial" />
 
-        <!-- Question 5 - Ask -->
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/question_5_ask"
-            android:layout_marginLeft="@dimen/margin_8dp"
-            android:layout_marginRight="@dimen/margin_8dp"
-            android:layout_marginTop="@dimen/margin_2dp"
-            android:layout_marginBottom="@dimen/margin_4dp"/>
+            style="@style/QuestionStyle"
+            android:text="@string/question_5_ask" />
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginLeft="@dimen/margin_8dp"
-            android:layout_marginRight="@dimen/margin_8dp"
-            android:layout_marginTop="@dimen/margin_2dp"
-            android:layout_marginBottom="@dimen/margin_4dp">
+            style="@style/RadioGroupAndLayoutStyle"
+            android:orientation="horizontal">
 
             <!-- Question 5 - Answer 1 -->
             <CheckBox
                 android:id="@+id/q5_answer_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/q5_answer_1"
-                android:textSize="@dimen/answerTextSize"
-                android:layout_marginTop="@dimen/margin_1dp"
-                android:layout_marginRight="@dimen/margin_4dp"/>
+                style="@style/AnswerStyle"
+                android:text="@string/q5_answer_1" />
 
             <!-- Question 5 - Answer 2 -->
             <CheckBox
                 android:id="@+id/q5_answer_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/q5_answer_2"
-                android:textSize="@dimen/answerTextSize"
-                android:layout_marginTop="@dimen/margin_1dp"
-                android:layout_marginRight="@dimen/margin_4dp"/>
+                style="@style/AnswerStyle"
+                android:text="@string/q5_answer_2" />
 
             <!-- Question 5 - Answer 3 -->
             <CheckBox
                 android:id="@+id/q5_answer_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/q5_answer_3"
-                android:textSize="@dimen/answerTextSize"
-                android:layout_marginTop="@dimen/margin_2dp"
-                android:layout_marginRight="@dimen/margin_4dp"/>
+                style="@style/AnswerStyle"
+                android:text="@string/q5_answer_3" />
 
             <!-- Question 5 - Answer 4 -->
             <CheckBox
                 android:id="@+id/q5_answer_4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/q5_answer_4"
-                android:textSize="@dimen/answerTextSize"
-                android:layout_marginTop="@dimen/margin_2dp"
-                android:layout_marginRight="@dimen/margin_4dp" />
+                style="@style/AnswerStyle"
+                android:text="@string/q5_answer_4" />
 
         </LinearLayout>
 
@@ -319,19 +178,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/submit_button"
-            android:layout_marginTop="@dimen/margin_10dp"
-            android:layout_marginRight="@dimen/margin_8dp"
-            android:layout_marginLeft="@dimen/margin_8dp"
-            android:layout_marginBottom="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/marginUpQuestionTitleAndFinalButton"
+            android:layout_marginRight="@dimen/marginSides"
+            android:layout_marginLeft="@dimen/marginSides"
+            android:layout_marginBottom="@dimen/marginUpQuestionTitleAndFinalButton"
             android:onClick="submitQuiz" />
 
         <TextView
             android:id="@+id/quiz_result"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=""
-            android:layout_marginRight="@dimen/margin_8dp"
-            android:layout_marginLeft="@dimen/margin_8dp"/>
+            android:layout_marginRight="@dimen/marginSides"
+            android:layout_marginLeft="@dimen/marginSides"
+            android:layout_marginBottom="@dimen/marginUpQuestionTitleAndFinalButton"/>
 
     </LinearLayout>
 

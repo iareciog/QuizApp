@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
      *  Check all questions
      *  and give the result.
      **/
+
     public void submitQuiz(View view){
         points = 0;
         question1Check();
@@ -118,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
         EditText textAnswer = findViewById(R.id.q4_answer);
         String answer_q4 = textAnswer.getText().toString();
 
-        if (answer_q4.matches("int")){
+        if (answer_q4.matches("int") || answer_q4.matches("integer")){
             points = points + 2;
         }
     }

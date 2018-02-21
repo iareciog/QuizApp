@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="margin_10dp">10dp</dimen>
-    <dimen name="margin_8dp">8dp</dimen>
-    <dimen name="margin_4dp">4dp</dimen>
-    <dimen name="margin_2dp">2dp</dimen>
-    <dimen name="margin_1dp">1dp</dimen>
-    <dimen name="questionTextSize">15sp</dimen>
+    <dimen name="marginUpQuestionTitleAndFinalButton">10dp</dimen>
+    <dimen name="marginSides">8dp</dimen>
+    <dimen name="marginUpDown">4dp</dimen>
+    <dimen name="questionMargin">2dp</dimen>
+    <dimen name="questionTitleTextSize">15sp</dimen>
     <dimen name="answerTextSize">13sp</dimen>
 </resources>

@@ -34,8 +34,8 @@
     <string name="question_5_ask">Which of these possible answers is considered a string?</string>
     <string name="q5_answer_1">Book</string>
     <string name="q5_answer_2" translatable="false">27</string>
-    <string name="q5_answer_3" translatable="false">\"71\"</string>
-    <string name="q5_answer_4" translatable="false">\"7\"</string>
+    <string name="q5_answer_3" translatable="false">71</string>
+    <string name="q5_answer_4" translatable="false">7</string>
 
     <!-- Submit -->
     <string name="submit_button">Submit</string>

@@ -1,5 +1,6 @@
 package com.example.android.quiz;
 
+import android.content.Context;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      *  This function reset points to 0.
      *  Check all questions
-     *  and give the result.
+     *  And display the result.
      **/
 
     public void submitQuiz(View view){
@@ -38,9 +40,10 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void displayResult(){
-        String result = resultText();
-        TextView theResult = findViewById(R.id.quiz_result);
-        theResult.setText(result);
+        Context context = getApplicationContext();
+        int duration = Toast.LENGTH_SHORT;
+        Toast toast = Toast.makeText(context, resultText(), duration);
+        toast.show();
     }
     /**
      *  This function create a return of a string
@@ -58,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
      **/
     private String name(){
         EditText name = findViewById(R.id.name);
-        String userName = name.getText().toString();
+        String userName = name.getText().toString().trim();
 
         if(userName.isEmpty()){
             userName = "Anonymous";
@@ -89,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
         RadioButton correctAnswer = findViewById(R.id.q1_answer_3);
         boolean answer_q1 = correctAnswer.isChecked();
 
-        if(answer_q1){ points++; }
+        if(answer_q1){ points +=2; }
 
     }
     /**
@@ -104,12 +107,10 @@ public class MainActivity extends AppCompatActivity {
     //Check if answer from question 3 are correct
     private void question3Check(){
         EditText textAnswer = findViewById(R.id.q3_answer);
-        String answer_q3 = textAnswer.getText().toString();
+        String answer_q3 = textAnswer.getText().toString().trim();
 
-        if (answer_q3.matches("String carColor;")){
-            points = points + 2;
-        } else if (answer_q3.matches("String carColor")){
-            points++;
+        if (answer_q3.matches("String carColor")|| answer_q3.matches("String carColor;")){
+            points += 2;
         }
     }
     /**
@@ -117,31 +118,23 @@ public class MainActivity extends AppCompatActivity {
      **/
     private void question4Check(){
         EditText textAnswer = findViewById(R.id.q4_answer);
-        String answer_q4 = textAnswer.getText().toString();
+        String answer_q4 = textAnswer.getText().toString().trim();
 
-        if (answer_q4.matches("int") || answer_q4.matches("integer")){
-            points = points + 2;
+        if (answer_q4.matches("int")){
+            points += 2;
         }
     }
     /**
-     *  Check if answers from question 5 are correct
-     *
-     *  If there any answer wrong, discount 2 points to the total points of the question
+     * Check if answers from question 5 are correct
      **/
     private void question5Check(){
-        CheckBox correctAnswer1 = findViewById(R.id.q5_answer_1);
-        CheckBox correctAnswer2 = findViewById(R.id.q5_answer_3);
-        CheckBox correctAnswer3 = findViewById(R.id.q5_answer_4);
-        CheckBox wrongAnswer = findViewById(R.id.q5_answer_2);
+        CheckBox CheckBoxA_q5 = findViewById(R.id.q5_answer_1);
+        CheckBox CheckBoxB_q5 = findViewById(R.id.q5_answer_3);
+        CheckBox CheckBoxC_q5 = findViewById(R.id.q5_answer_4);
+        CheckBox CheckBoxD_q5 = findViewById(R.id.q5_answer_2);
 
-        boolean answer_q5_1 = correctAnswer1.isChecked();
-        boolean answer_q5_2 = correctAnswer2.isChecked();
-        boolean answer_q5_3 = correctAnswer3.isChecked();
-        boolean answer_wrong = wrongAnswer.isChecked();
-
-        if (answer_q5_1) { points++; }
-        if (answer_q5_2) { points++; }
-        if (answer_q5_3) { points++; }
-        if (answer_wrong) { points = points - 2; }
+        if(CheckBoxA_q5.isChecked() && !CheckBoxB_q5.isChecked() && !CheckBoxC_q5.isChecked() && !CheckBoxD_q5.isChecked()){
+            points += 2;
+        }
     }
 }

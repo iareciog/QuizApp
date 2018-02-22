@@ -184,14 +184,6 @@
             android:layout_marginBottom="@dimen/marginUpQuestionTitleAndFinalButton"
             android:onClick="submitQuiz" />
 
-        <TextView
-            android:id="@+id/quiz_result"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/marginSides"
-            android:layout_marginLeft="@dimen/marginSides"
-            android:layout_marginBottom="@dimen/marginUpQuestionTitleAndFinalButton"/>
-
     </LinearLayout>
 
 </ScrollView>
